@@ -1,0 +1,57 @@
+
+<!-- 6. Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell.
+Table + form with 3 elements: input field and 2x select fields to pick the row and column -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<div class="container">
+       <table id="sampleTable" border="1">
+
+            <tr><td>Row1 Cell1</td>
+
+            <td>Row1 Cell2</td></tr>
+
+            <tr><td>Row2 Cell1</td>
+
+            <td>Row2 Cell2</td></tr>
+
+            <tr><td>Row3 Cell1</td>
+
+            <td>Row3 Cell2</td></tr>
+
+        </table><br>
+        <form onsubmit="submitForm(event)">
+    <table>
+        
+        <tr>
+            <td><input type="text" id="write-text"></td>
+           
+
+            <td><select id="selectCell">
+                <option></option>
+                <option value="0">Cell 1</button></option>
+                <option value="1">Cell 2</option>
+                <option value="2">Cell 3</option>
+            </td>
+            <td><select id="selectRow">
+                <option></option>
+                <option value="0">Row 1</option>
+                <option value="1">Row 2</option>
+                <option value="2">Row 3</option>
+            </td>
+         </tr>
+
+    </table>
+</form>
+</div>
+    <script src="./JS/main(6).js"></script>
+</body>
+</html>
+
